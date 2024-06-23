@@ -22,9 +22,9 @@
         {%for emp in employees%}
           <tr>
             <th scope="row">1</th>
-            <a href="{%url 'employee_detail' emp.id%}">
-              <td>{{emp.name}}</td>
-            </a>
+            <td>
+              <a href="{%url 'employee_detail' emp.id%}">{{emp.name}}</a>
+            </td>
             <td>{{emp.email}}</td>
             <td>@{{emp.salary}}</td>
           </tr>

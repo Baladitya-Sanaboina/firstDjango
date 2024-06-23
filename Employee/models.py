@@ -6,5 +6,6 @@ class employee(models.Model):
     emp_id=models.IntegerField()
     email=models.EmailField()
     salary=models.IntegerField()
+    photo = models.ImageField(upload_to='images')
     def __str__(self):
         return self.name
